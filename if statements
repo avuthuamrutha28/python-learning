@@ -1,0 +1,78 @@
+#Write a program to accept a number and find whether it is even or odd
+number=int(input("Enter a number:"))
+if number%2==0:
+    print("It is a Even number")
+else:
+    print("It is an Odd number")
+
+#Write a program to accept the bill amount and age of the customer; if the customer’s age is >50 years then give a discount of 5% on the bill.
+amount=float(input("Enter a amount:"))
+age=int(input("Enter Age:"))
+if age>50:
+    discount=amount*0.05
+    bill=amount-discount
+else:
+    bill=amount
+
+print(f"The bill amount is {bill}")
+
+
+#Write a program to accept two numbers from the user and find the bigger of the two.
+num1=int(input("Enter 1st number:"))
+num2=int(input("Enter 2nd number:"))
+if num1>num2:
+    print("num1 is bigger")
+elif num2>num1:
+    print("num2 is bigger")
+else:
+    print("Both are equal")
+
+#Write a program to accept three numbers and find the biggest number.
+a=int(input("Enter a 1st number:"))
+b=int(input("Enter a 2nd number:"))
+c=int(input("Enter a 3rd number:"))
+if a>b>c:
+    print("a is greater than b and c")
+elif b>a>c:
+    print("b is greater than a and c")
+
+elif c>a>b:
+    print("c is greater than a and b")
+else:
+    print("All numbers are equal")
+
+#Write a program to accept a number from the user. If the number is negative then convert it to a positive number and print; if it is a positive number, print it as is.
+number=int(input("Enter a number:"))
+
+if number<0:
+    positive_number=-1*number
+    print(f"The positive number is {positive_number}")
+else:
+    print(f"The number is {number}")
+
+#If cost price and selling price of an item is input through the keyboard, write a program to determine whether the seller has made a profit or incurred a loss. Also determine the quantum of profit or loss.
+selling_price=int(input("Enter the selling price:"))
+cost_price=int(input("Enter the cost price"))
+if selling_price>cost_price:
+    print("Got profit")
+elif selling_price<cost_price:
+    print("Got lose")
+else:
+    print("No profit, No lose")
+
+#Write a program to accept any character from the user; determine whether it is – a letter in the upper case, lower case, digit, or a special symbol. (Hint: Use ASCII values.)
+char = input("Enter a character: ")
+
+if len(char) != 1:
+    print("Please enter exactly one character.")
+else:
+    ascii_val = ord(char)
+
+    if 65 <= ascii_val <= 90:
+        print(f"'{char}' is an uppercase letter.")
+    elif 97 <= ascii_val <= 122:
+        print(f"'{char}' is a lowercase letter.")
+    elif 48 <= ascii_val <= 57:
+        print(f"'{char}' is a digit.")
+    else:
+        print(f"'{char}' is a special symbol.")
