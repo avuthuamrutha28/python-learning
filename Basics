@@ -1,0 +1,35 @@
+#Write a program to accept two numbers from the user and find their sum and average.
+a=int(input("Enter value 1:"))
+A=int(input("Enter value 2:"))
+sum_res=a+A
+avg_res=sum_res/2
+print(f"The sum is {sum_res} and the avg is {avg_res}")
+
+
+#Write a program to accept two numbers from the user and swap their values. (Example: x=12, y=15; after swapping x=15, y=12)
+x=int(input("Enter a value x:"))
+y=int(input("Enter the value y:"))
+x,y=y,x
+print(f"After swaping:x = {x} and y = {y} ")
+
+
+#Write a program to accept the weight of 5 persons (one by one) and display the net weight and the average weight.
+total_weight=0
+for i in range(1,6):
+    weight=float(input(f"Enter a person weight {i} in kg: "))
+    total_weight+=weight
+    avg_weight=total_weight/5
+print(f"The total weight is: {total_weight} kg")
+print(f"The avg weight is:{avg_weight} kg")
+
+#Write a program to find the simple interest based on the following data: P = Rs 6000, R = 10%, T = 1.5 years.
+x=6000
+y=float(10)
+z=float(1.5)
+si=(x*y*z)/100
+print(f"the simple interest is {si}")
+
+
+x=int(input("Enter a number: "))
+cube_res=x**3
+print(f"cube of {x} is {cube_res}")
